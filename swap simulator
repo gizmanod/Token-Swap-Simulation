@@ -1,0 +1,15 @@
+### Description
+Simulates token swapping using Uniswap APIs.
+
+### Files
+- **`token_swap.py`**
+  ```python
+  def simulate_swap(token1, token2, amount):
+      print(f"Swapping {amount} {token1} for {token2}")
+      rate = 0.5  # Simplified swap rate
+      received = amount * rate
+      print(f"You receive {received} {token2}")
+
+  if __name__ == "__main__":
+      simulate_swap("ETH", "DAI", 100)
+  ```
